@@ -1,5 +1,5 @@
 const Footer = () => {
-  const footerYear = Date().getFullYear()
+  const footerYear = new Date().getFullYear()
   return (
     <footer className='footer p-10 bg-gray-700 footer-center'>
       <div>

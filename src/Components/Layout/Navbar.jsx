@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const navElements = [
     { link: '/', linkName: 'Home' },
-    { link: '/', linkName: 'About' },
+    { link: '/about', linkName: 'About' },
   ]
   return (
     <nav className='navbar mb-12 shadow-lg bg-neutral text-white'>

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import NotFound from './Pages/NotFound'
-import Navbar from './Components/Layout/Navbar'
-import Footer from './Components/Layout/Footer'
-import { GithubProvider } from './Components/Context/Github/GithubContext'
+import Home from './pages/Home'
+import About from './pages/About'
+import NotFound from './pages/NotFound'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import { GithubProvider } from './context/github/GithubContext.jsx'
 
 const App = () => {
   return (

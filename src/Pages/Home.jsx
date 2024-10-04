@@ -1,4 +1,4 @@
-import UserResults from '../Components/users/UserResults'
+import UserResults from '../components/users/UserResults'
 
 const Home = () => {
   return (

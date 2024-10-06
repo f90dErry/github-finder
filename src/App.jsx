@@ -4,6 +4,7 @@ import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Alert from './components/layout/Alert.jsx'
 import { GithubProvider } from './context/github/GithubContext.jsx'
 import { AlertProvider } from './context/alert/AlertContext.jsx'
 
@@ -16,6 +17,7 @@ const App = () => {
             <Navbar />
 
             <main className='container mx-auto px-3 pb-12'>
+              <Alert />
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />

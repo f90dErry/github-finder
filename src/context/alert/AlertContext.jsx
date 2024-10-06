@@ -9,7 +9,7 @@ export const AlertProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AlertReducer, initialState)
 
   //set an alert
-  const serAlert = (msg, type) => {
+  const setAlert = (msg, type) => {
     dispatch({
       type: 'SET_ALERT',
       payload: { msg, type },
@@ -19,7 +19,7 @@ export const AlertProvider = ({ children }) => {
   }
 
   return (
-    <AlertContext.Provider value={{ alert: state }}>
+    <AlertContext.Provider value={{ alert: state, setAlert }}>
       {children}
     </AlertContext.Provider>
   )

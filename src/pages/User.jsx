@@ -17,8 +17,9 @@ const User = () => {
   const {
     name,
     type,
-    avartar_url,
+    avatar_url,
     location,
+    bio,
     blog,
     twitter_username,
     login,
@@ -26,7 +27,7 @@ const User = () => {
     followers,
     following,
     public_repos,
-    public_gist,
+    public_gists,
     hirable,
   } = user
 
@@ -42,12 +43,17 @@ const User = () => {
             Back To Search
           </Link>
         </div>
+
         <div className='grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8'>
           <div className='custom-card-image mb-6 md:mb-0'>
             <div className='rounded-lg shadow-xl card image-full'>
               <figure>
-                <img src={avartar_url} alt='user_img' />
+                <img src={avatar_url} alt='' />
               </figure>
+              <div className='card-body justify-end'>
+                <div className='card-title mb-0'>{name}</div>
+                <p>{login}</p>
+              </div>
             </div>
           </div>
         </div>

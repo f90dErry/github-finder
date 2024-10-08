@@ -56,6 +56,50 @@ const User = () => {
               </div>
             </div>
           </div>
+          <div className='cols-span-2'>
+            <div className='mb-6'>
+              <h1 className='text-3xl card-title'>
+                {name}
+                <div className='ml-2 mr-1 badge badge-success'>{type}</div>
+                {hirable && (
+                  <div className='mx-1 badge badge-info'>Hirable</div>
+                )}
+              </h1>
+              <p className='text-wrap'> {bio} </p>
+              <div className='mt-4 card-actions'>
+                <a
+                  href={html_url}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='btn btn-outline'
+                >
+                  Visit Github Progile
+                </a>
+              </div>
+            </div>
+            <div className='w-full shadow-md rounded-lg bg-base-100 stats'>
+              {location && (
+                <div className='stat'>
+                  <div className='stat-title text-md'>Location</div>
+                  <div className='text-lg stat-value'>{location}</div>
+                </div>
+              )}
+              {blog && (
+                <div className='stat'>
+                  <div className='stat-title text-md'>Website</div>
+                  <div className='text-lg stat-value'>
+                    <a
+                      href={`https://${blog}`}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      {blog}
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>

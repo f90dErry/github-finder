@@ -52,7 +52,7 @@ const User = () => {
               </figure>
               <div className='card-body justify-end'>
                 <div className='card-title mb-0'>{name}</div>
-                <p>{login}</p>
+                <p className='flex-grow-0'>{login}</p>
               </div>
             </div>
           </div>

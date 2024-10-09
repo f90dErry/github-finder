@@ -1,3 +1,5 @@
+const GITHUB_URL = 'https://api.github.com'
+
 //get search results
 export const searchUsers = async (text) => {
   const params = new URLSearchParams({

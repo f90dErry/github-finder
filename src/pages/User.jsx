@@ -64,7 +64,7 @@ const User = () => {
               </div>
             </div>
           </div>
-          <div className='cols-span-2'>
+          <div className='col-span-2'>
             <div className='mb-6'>
               <h1 className='text-3xl card-title'>
                 {name}

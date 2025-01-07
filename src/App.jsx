@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-//import Home from './pages/Home'
+import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import User from './pages/User.jsx'
@@ -20,8 +20,8 @@ const App = () => {
             <main className='container mx-auto px-3 pb-12'>
               <Alert />
               <Routes>
-                <Route path='/' element={<About />} />
-                {/* <Route path='/about' element={<About />} /> */}
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
                 <Route path='/user/:login' element={<User />} />
                 <Route path='/notfound' element={<NotFound />} />
                 <Route path='/*' element={<NotFound />} />

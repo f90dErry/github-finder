@@ -42,5 +42,5 @@ export default {
       'sunset',
     ],
   },
-  plugins: [require('daisyui')],
+  plugins: [daisyui],
 }
